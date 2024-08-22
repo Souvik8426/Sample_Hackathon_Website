@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  /* This will hide any horizontal overflow */
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+      50% 50% at 100% 0,
+      #0f3067 0% 5%,
+      #081a4b 6% 15%,
+      #0f3067 16% 25%,
+      #081a4b 26% 35%,
+      #0f3067 36% 45%,
+      #081a4b 46% 55%,
+      #0f3067 56% 65%,
+      #081a4b 66% 75%,
+      #0f3067 76% 85%,
+      #081a4b 86% 95%,
+      #0000 96%
+    ),
+    radial-gradient(
+      50% 50% at 0 100%,
+      #0f3067 0% 5%,
+      #081a4b 6% 15%,
+      #0f3067 16% 25%,
+      #081a4b 26% 35%,
+      #0f3067 36% 45%,
+      #081a4b 46% 55%,
+      #0f3067 56% 65%,
+      #081a4b 66% 75%,
+      #0f3067 76% 85%,
+      #081a4b 86% 95%,
+      #0000 96%
+    ),
+    radial-gradient(
+      50% 50%,
+      #0f3067 0% 5%,
+      #081a4b 6% 15%,
+      #0f3067 16% 25%,
+      #081a4b 26% 35%,
+      #0f3067 36% 45%,
+      #081a4b 46% 55%,
+      #0f3067 56% 65%,
+      #081a4b 66% 75%,
+      #0f3067 76% 85%,
+      #081a4b 86% 95%,
+      #0000 96%
+    ),
+    radial-gradient(
+        50% 50%,
+        #0f3067 0% 5%,
+        #081a4b 6% 15%,
+        #0f3067 16% 25%,
+        #081a4b 26% 35%,
+        #0f3067 36% 45%,
+        #081a4b 46% 55%,
+        #0f3067 56% 65%,
+        #081a4b 66% 75%,
+        #0f3067 76% 85%,
+        #081a4b 86% 95%,
+        #0000 96%
+      )
+      38px 38px;
+  background-size: 76px 76px;
+  background-color: #172554; 
+  /* width: 100%;
+  height: 100%;
+  --s: 200px; 
+  --c1: #0a2a65; 
+  --c2: #0d3b88; 
+  --c3: #135bb1; 
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577); */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: transparent;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: linear-gradient(to left, #ffb969, #edffe6);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.App-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: linear-gradient(to left, #ffb969, #edffe6);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.App-header p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  background: linear-gradient(to bottom, #ff69b4, #ffe6f2);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.App-container {
+  display: flex;
+  height: 100vh;
+  backdrop-filter: blur(2px); /* Adjust the blur radius as needed */
+}
+
+.App-header {
+  flex: 1;
+  /* Takes up the left half */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Vertically center the content */
+  align-items: center;
+}
+
+.Image-container {
+  flex: 1;
+  /* Takes up the right half */
+  display: flex;
+  justify-content: center;
+  /* Centers the image horizontally */
+  align-items: center;
+  /* Centers the image vertically */
+  background-color: #f0f0f0;
+  /* Optional: Background color for the right side */
+}
+
+.Image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+.sponsors-container h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.custom-blur {
+  backdrop-filter: blur(2px); 
+}
+
+html {
+  scroll-behavior: smooth;
+}
