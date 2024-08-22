@@ -21,7 +21,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  background: radial-gradient(
+  /* background: radial-gradient(
       50% 50% at 100% 0,
       #0f3067 0% 5%,
       #081a4b 6% 15%,
@@ -79,8 +79,8 @@ body {
       )
       38px 38px;
   background-size: 76px 76px;
-  background-color: #172554; 
-  /* width: 100%;
+  background-color: #172554;  */
+  width: 100%;
   height: 100%;
   --s: 200px; 
   --c1: #0a2a65; 
@@ -99,7 +99,7 @@ body {
       var(--c2) 0 120deg,
       var(--c3) 0 180deg
     );
-  background-size: var(--s) calc(var(--s) * 0.577); */
+  background-size: var(--s) calc(var(--s) * 0.577);
 }
 
 .App {
